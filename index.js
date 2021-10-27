@@ -28,6 +28,12 @@ async function insertData()
             res.send('This is the server root');
         });
 
+        // Test api
+        app.get('/test', async (req, res) =>
+        {
+            res.send('Hello test api');
+        });
+
         // POST API
         app.post('/api/products', async (req, res) =>
         {
